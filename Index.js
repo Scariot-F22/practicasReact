@@ -289,8 +289,16 @@ const eliminarRepetidos = (array) => {
     //tiene mejor perfomance con objeto Set.
 console.log(eliminarRepetidos([1,1,1,1,2,3,7,7,7,8,9,]))
 
-// 20) Programa una función que dado un arreglo de números devuelva un objeto con dos arreglos, el primero tendrá los numeros ordenados en forma ascendente y el segundo de forma descendiente, 
+// 20) Programa una función que dado un arreglo de números devuelva un objeto con dos arreglos, 
+// el primero tendrá los numeros ordenados en forma ascendente y el segundo de forma descendiente, 
 // pe. miFuncion([7, 5,7,8,6]) devolverá { asc: [5,6,7,7,8], desc: [8,7,7,6,5] }.
+
+const ordenarArray = (array)=> {
+    let asc = array.sort((a,b)=>a-b).toString().split(",")
+    let desc = array.sort((a,b)=>b-a).toString().split(",")
+    return {desc, asc}
+}
+console.log(ordenarArray([0,9,4,5,7,2,80,99]))
 
 // 21)
     /* 
@@ -306,9 +314,15 @@ console.log(eliminarRepetidos([1,1,1,1,2,3,7,7,7,8,9,]))
 
     */
 
+const removeVowels = (string)=>  string.split(/[aeiou]/gi).join("");
+console.log(removeVowels("This website is for losers LOL!"))
+
 // 22)
     /* Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
 
     For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
 
     Note: The function accepts an integer and returns an integer */
+
+const numSquare = (num)=> parseInt(num.toString().split("").map(el => el **2).join(""))
+console.log(numSquare(9119))
