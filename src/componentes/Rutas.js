@@ -1,6 +1,9 @@
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Inicio from "./Inicio";
+import Servicios from "./Servicios";
+import Contacto from "./Contacto";
+import NavBar from "./Navbar";
 
 const Rutas = () => {
   return (

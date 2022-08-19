@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Contador = () => {
     const [contador, setContador] = useState(0);
+    
     const sumar = () => setContador(contador + 1),
         restar = () => setContador(contador - 1),
         reset = () => setContador(0);
