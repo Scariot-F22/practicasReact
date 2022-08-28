@@ -1,4 +1,5 @@
 import BlogUseEffect from "./BlogUseEffect";
+import ShoppingCart from "./claseCarritoDeCompras/ShoppingCart";
 import ContadorReducer from "./componentes/Clase Reducer/ContadorConUseReducer";
 import ContenedorTarjetas from "./componentes/ContenedorTarjetas";
 import Rutas from "./componentes/Rutas";
@@ -40,7 +41,8 @@ function App() {
         <Footer />
       </ThemeProvider> */}
       {/* <Rutas /> */}
-      <ContadorReducer />
+      {/* <ContadorReducer /> */}
+      <ShoppingCart />
     </>
   );
 }
