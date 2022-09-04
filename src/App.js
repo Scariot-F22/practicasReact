@@ -2,6 +2,7 @@ import BlogUseEffect from "./BlogUseEffect";
 import ShoppingCart from "./claseCarritoDeCompras/ShoppingCart";
 import ContadorReducer from "./componentes/Clase Reducer/ContadorConUseReducer";
 import ContenedorTarjetas from "./componentes/ContenedorTarjetas";
+import RequestApi from "./componentes/pedidoApi/RequestApi";
 import Rutas from "./componentes/Rutas";
 import ThemeProvider from "./componentes/ThemeProvider";
 import Contador from "./Contador(practica)";
@@ -42,7 +43,8 @@ function App() {
       </ThemeProvider> */}
       {/* <Rutas /> */}
       {/* <ContadorReducer /> */}
-      <ShoppingCart />
+      {/* <ShoppingCart /> */}
+      <RequestApi />
     </>
   );
 }
