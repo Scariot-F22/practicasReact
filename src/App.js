@@ -43,8 +43,8 @@ function App() {
       </ThemeProvider> */}
       {/* <Rutas /> */}
       {/* <ContadorReducer /> */}
-      {/* <ShoppingCart /> */}
-      <RequestApi />
+      <ShoppingCart />
+      {/* <RequestApi /> */}
     </>
   );
 }
