@@ -1,5 +1,6 @@
 import BlogUseEffect from "./BlogUseEffect";
 import ShoppingCart from "./claseCarritoDeCompras/ShoppingCart";
+import CrudApp from "./claseCRUD/CrudApp";
 import ContadorReducer from "./componentes/Clase Reducer/ContadorConUseReducer";
 import ContenedorTarjetas from "./componentes/ContenedorTarjetas";
 import RequestApi from "./componentes/pedidoApi/RequestApi";
@@ -43,8 +44,9 @@ function App() {
       </ThemeProvider> */}
       {/* <Rutas /> */}
       {/* <ContadorReducer /> */}
-      <ShoppingCart />
+      {/* <ShoppingCart /> */}
       {/* <RequestApi /> */}
+      <CrudApp/>
     </>
   );
 }
